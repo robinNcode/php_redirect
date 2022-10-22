@@ -4,6 +4,7 @@
     if(!empty($_GET['hospitals'])) {
         $hospitals = unserialize($_GET['hospitals']);
     }
+    
 ?>
 
 <!DOCTYPE html>
