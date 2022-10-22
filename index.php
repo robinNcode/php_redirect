@@ -36,10 +36,12 @@
     </form>
 
     <div>
-        <?php foreach($hospitals AS $hospital) : ?>
-            <h5>Hospital Name: <?= $hospital['name'] ?></h5>
-            <h6>Phone: <?= $hospital['phone'] ?></h5>
-        <?php endforeach; ?>
+        <?php if(!empty($hospitals)): ?>
+            <?php foreach($hospitals AS $hospital) : ?>
+                <h5>Hospital Name: <?= $hospital['name'] ?></h5>
+                <h6>Phone: <?= $hospital['phone'] ?></h5>
+            <?php endforeach; ?>
+        <?php endif; ?>
     </div>
 </body>
 </html>
